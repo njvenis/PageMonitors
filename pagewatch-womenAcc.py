@@ -116,7 +116,7 @@ def pull():
         print("HTTP Error" + str(e))
     except Exception as e:
         sentFrom = gmailUser
-        to = "nicholasvenis@hotmail.com"
+        to = ""
         subject = "Script Error"
         emailtext = "Subject: {}\n\n{}".format(subject, e)
         try:
