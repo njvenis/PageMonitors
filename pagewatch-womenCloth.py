@@ -61,7 +61,7 @@ def pull():
                     temp = temp.replace(" ","-")
                     link.append("https://uk.burberry.com/"+temp+"-p"+val)
 
-                to = ["katie.price@burberry.com"]
+                to = [""]
                 subject = 'New Womens Accesories in sale!'
                 text = "New items added to sale, see below \n\n"
                 ids = "New product ID's: "+ ", ".join(diffID) + '\n'
@@ -116,7 +116,7 @@ def pull():
         print("HTTP Error" + str(e))
     except Exception as e:
         sentFrom = gmailUser
-        to = "nicholasvenis@hotmail.com"
+        to = ""
         subject = "Script Error"
         emailtext = "Subject: {}\n\n{}".format(subject, e)
         try:
