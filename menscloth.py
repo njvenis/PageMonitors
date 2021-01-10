@@ -58,7 +58,7 @@ def pull():
                     link.append("https://uk.burberry.com/"+temp+"-p"+val)
                     print(link)
 
-                to = ["zalak.karia@burberry.com","matin.abba@burberry.com"]
+                to = [""]
                 subject = 'New Mens Clothing in sale!'
                 text = "New items added to sale, see below \n\n"
                 ids = "New product ID's: "+ ", ".join(diffID) + '\n'
