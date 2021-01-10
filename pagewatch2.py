@@ -13,7 +13,7 @@ gmailPass = ""
 
 def pull():
     try:
-        page = requests.get("https://uk.burberry.com/slkjdgosdlk/")
+        page = requests.get("https://uk.burberry.com//")
         data = page.content
 
         soup = BeautifulSoup(data, "html.parser")
@@ -58,7 +58,7 @@ def pull():
                     link.append("https://uk.burberry.com/"+temp+"-p"+val)
                     print(link)
 
-                to = ["matin.abba@burberry.com","zalak.karia@burberry.com","joshua.coles@burberry.com","katie.price@burberry.com","dean.atkinson@burberry.com"]
+                to = []
                 subject = 'New products in sale!'
                 text = "New items added to sale, see below \n\n"
                 ids = "New product ID's: "+ ", ".join(diffID) + '\n'
